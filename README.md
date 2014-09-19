@@ -1,7 +1,5 @@
 laravel-js-localization
 =======================
-[![Build Status](https://travis-ci.org/andywer/laravel-js-localization.svg?branch=master)](https://travis-ci.org/andywer/laravel-js-localization) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/andywer/laravel-js-localization/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/andywer/laravel-js-localization/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/andywer/laravel-js-localization/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/andywer/laravel-js-localization/?branch=master) [![Total Downloads](https://poser.pugx.org/andywer/js-localization/downloads.svg)](https://packagist.org/packages/andywer/js-localization)
-
 
 Simple, ease-to-use and flexible package for the [Laravel](http://laravel.com/) web framework. Allows you to use localized messages of the Laravel webapp (see `app/lang` directory) in your Javascript code. You may easily configure which messages you need to export.
 
@@ -12,7 +10,7 @@ Add the following line to the `require` section of your Laravel webapp's `compos
 
 ```javascript
     "require": {
-        "andywer/js-localization": "dev-master"
+        "natharduini/js-localization": "dev-master"
     }
 ```
 
@@ -151,6 +149,11 @@ The package has been updated to work with Laravel 4.1. Edit your composer.json d
         "andywer/js-localization": "dev-laravel-4.0"
     }
 ```
+
+My contribution
+---------------
+
+I needed Lang.get() to behave like Laravel's Lang::get(): when passing the name of a language bundle instead of a full "bundle.key", it now returns the full bundle as an array.
 
 
 License
