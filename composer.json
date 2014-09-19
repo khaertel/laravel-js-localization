@@ -1,5 +1,5 @@
 {
-    "name": "natharduini/js-localization",
+    "name": "andywer/js-localization",
     "description": "Laravel package to provide localizations to the Javascript code.",
     "keywords": ["laravel", "javascript", "localization", "translation", "messages"],
     "license": "MIT",
@@ -7,10 +7,6 @@
         {
             "name": "Andy Wermke",
             "email": "andy@dev.next-step-software.com"
-        },
-        {
-            "name": "Nath Arduini",
-            "email": "nathalie.arduini@gmail.com"
         }
     ],
     "require": {
