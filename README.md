@@ -17,6 +17,7 @@ Add the following line to the `require` section of your Laravel webapp's `compos
     "require": {
         "andywer/js-localization": "dev-master"
     }
+```
 
 Add the following line to the `repositories` section of your Laravel webapp's `composer.json` file:
 
@@ -24,10 +25,10 @@ Add the following line to the `repositories` section of your Laravel webapp's `c
     "repositories": [{
         "type": "vcs",
         "url": "https://github.com/natharduini/laravel-js-localization"
-    }],
+    }]
+```
 
 Run `composer update` to install the package.
-
 
 Finally add the following line to the `providers` array of your `app/config/app.php` file:
 
