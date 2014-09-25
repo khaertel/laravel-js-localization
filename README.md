@@ -3,6 +3,11 @@ laravel-js-localization
 
 Simple, ease-to-use and flexible package for the [Laravel](http://laravel.com/) web framework. Allows you to use localized messages of the Laravel webapp (see `app/lang` directory) in your Javascript code. You may easily configure which messages you need to export.
 
+My contribution
+---------------
+
+I needed Lang.get() to behave like Laravel's Lang::get(): when passing the name of a language bundle instead of a full "bundle.key", it now returns the full bundle as an array.
+
 Installation
 ------------
 
@@ -10,10 +15,16 @@ Add the following line to the `require` section of your Laravel webapp's `compos
 
 ```javascript
     "require": {
-        "natharduini/js-localization": "dev-master"
+        "andywer/js-localization": "dev-master"
     }
-```
 
+Add the following line to the `repositories` section of your Laravel webapp's `composer.json` file:
+
+```javascript
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/natharduini/laravel-js-localization"
+    }],
 
 Run `composer update` to install the package.
 
@@ -149,12 +160,6 @@ The package has been updated to work with Laravel 4.1. Edit your composer.json d
         "andywer/js-localization": "dev-laravel-4.0"
     }
 ```
-
-My contribution
----------------
-
-I needed Lang.get() to behave like Laravel's Lang::get(): when passing the name of a language bundle instead of a full "bundle.key", it now returns the full bundle as an array.
-
 
 License
 -------
