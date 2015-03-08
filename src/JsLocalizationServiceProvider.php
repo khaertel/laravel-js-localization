@@ -24,7 +24,7 @@ class JsLocalizationServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{		
-		$this->loadViewsFrom(__DIR__.'/../views', 'js-localization');
+		$this->loadViewsFrom(__DIR__.'/views', 'js-localization');
 		
 		$this->registerRefreshCommand();
 	}
@@ -37,10 +37,10 @@ class JsLocalizationServiceProvider extends ServiceProvider {
 	public function register()
 	{
 		// Merge user's configuration
-		$this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'js-localization');
+		$this->mergeConfigFrom(__DIR__ . '/config/config.php', 'js-localization');
 
-		require __DIR__.'/../bindings.php';
-		require __DIR__.'/../routes.php';
+		require __DIR__.'/bindings.php';
+		require __DIR__.'/routes.php';
 	}
 
 	/**

@@ -17,7 +17,7 @@
         "orchestra/testbench": "2.1.*",
         "phpunit/phpunit": "3.7.*"
     },
-    "autoload": {
+    "autoload": {   
         "classmap": [
             "tests/TestCase.php"
         ],
