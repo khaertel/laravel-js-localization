@@ -1,5 +1,4 @@
-<?php
-namespace JsLocalization\Facades;
+<?php namespace JsLocalization\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

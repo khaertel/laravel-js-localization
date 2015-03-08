@@ -1,5 +1,4 @@
-<?php
-namespace JsLocalization\Console;
+<?php namespace JsLocalization\Console;
 
 use Config;
 use Illuminate\Console\Command;

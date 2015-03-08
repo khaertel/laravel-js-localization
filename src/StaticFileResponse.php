@@ -1,5 +1,4 @@
-<?php
-namespace JsLocalization;
+<?php namespace JsLocalization;
 
 use App;
 use DateTime;

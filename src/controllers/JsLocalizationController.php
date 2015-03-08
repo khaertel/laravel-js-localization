@@ -1,5 +1,6 @@
-<?php
+<?php namespace JsLocalization\Controllers;
 
+use \Illuminate\Routing\Controller;
 use JsLocalization\Facades\CachingService;
 
 class JsLocalizationController extends Controller
