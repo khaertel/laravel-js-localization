@@ -2,7 +2,7 @@
 
 use JsLocalization\StaticFileResponse;
 
-Route::get('/js-localization/messages', 'JsLocalization\JsLocalizationController@createJsMessages');
+Route::get('/js-localization/messages', 'JsLocalization\Controllers\JsLocalizationController@createJsMessages');
 
 Route::get('/js-localization/localization.js', function()
 {
