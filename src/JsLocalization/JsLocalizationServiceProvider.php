@@ -1,5 +1,4 @@
-<?php
-namespace JsLocalization;
+<?php namespace JsLocalization;
 
 use App;
 use Artisan;
@@ -24,10 +23,9 @@ class JsLocalizationServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function boot()
-	{
-		// $this->package('andywer/js-localization');
+	{		
+		$this->loadViewsFrom(__DIR__.'/../views', 'js-localization');
 		
-		$this->registerNamespaces();
 		$this->registerRefreshCommand();
 	}
 
@@ -38,6 +36,9 @@ class JsLocalizationServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
+		// Merge user's configuration
+		$this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'js-localization');
+
 		require __DIR__.'/../bindings.php';
 		require __DIR__.'/../routes.php';
 	}
@@ -51,18 +52,6 @@ class JsLocalizationServiceProvider extends ServiceProvider {
 	{
 		return array('js-localization');
 	}
-
-	private function registerNamespaces ()
-	{
-		if (File::isDirectory( app_path().'/config/packages/andywer/js-localization' )) {
-			Config::addNamespace('js-localization', app_path().'/config/packages/andywer/js-localization');
-		} else {
-			Config::addNamespace('js-localization', __DIR__.'/../config');
-		}
-
-		View::addNamespace('js-localization', __DIR__.'/../views');
-	}
-
 	/**
 	 * Register js-localization.refresh
 	 */
