@@ -25,7 +25,7 @@ class JsLocalizationServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('andywer/js-localization');
+		// $this->package('andywer/js-localization');
 		
 		$this->registerNamespaces();
 		$this->registerRefreshCommand();
